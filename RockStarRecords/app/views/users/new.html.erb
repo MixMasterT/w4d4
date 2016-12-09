@@ -1,0 +1,21 @@
+<h1>Sign Up with RockStar Records!</h1>
+
+<label for='signup_form'>Register Here:</label>
+<form id='signup_form' action="<%= users_url %>" method='POST'>
+  <%= auth_tok %>
+  <br />
+  <label>Email
+
+    <input type="text" name="user[email]">
+  </label>
+
+  <br /><br />
+
+  <label>Password
+    <input type="text" name="user[password]">
+  </label>
+
+  <br /><br />
+
+  <input type='submit' value='Join RR' />
+</form>

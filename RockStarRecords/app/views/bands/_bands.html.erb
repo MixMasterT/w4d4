@@ -1,0 +1,9 @@
+<form action= <%= destination_url %> method='POST'>
+  <%= auth_tok %>
+
+  <label>Band Name
+    <input type='text' name='band[name]' value="<%= @band ? @band.name : "" %>"/>
+  </label>
+
+  <input type='submit' value='Add band' />
+</form>

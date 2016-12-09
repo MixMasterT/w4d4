@@ -1,0 +1,9 @@
+<h1>Check out the bands represented by Rockstar Records!</h1>
+
+<ul>
+<% @bands.each do |band| %>
+    <li><%= link_to "#{band.name}", band_url(band) %></li><br />
+<% end %>
+</ul>
+
+<h3> <%= link_to 'Add a new band', new_band_url, destination_url: bands_url %></h3>

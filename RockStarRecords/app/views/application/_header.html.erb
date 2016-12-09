@@ -1,0 +1,8 @@
+<% if @current_user %>
+  <%= button_to 'log out', session_url, method: :delete %>
+<% else %>
+  <% if  request.env['PATH_INFO'] == %>
+    <%= link_to 'log in', new_session_url, method: :get %>
+    <%= link_to 'sign up', new_user_url, method: :get %>
+  <% end %>
+<% end %>

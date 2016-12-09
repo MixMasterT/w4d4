@@ -1,0 +1,21 @@
+<h1>Log in to RockStar Records!</h1>
+
+<label for='login_form'>Please enter your information:</label>
+<form id='login_form' action="<%= session_url %>" method='POST'>
+  <%= auth_tok %>
+  <br />
+  <label>Email
+
+    <input type="text" name="user[email]">
+  </label>
+
+  <br /><br />
+
+  <label>Password
+    <input type="text" name="user[password]">
+  </label>
+
+  <br /><br />
+
+  <input type='submit' value='log in' />
+</form>
